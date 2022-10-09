@@ -7,11 +7,23 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+
+
+
   body {
     background: ${({ theme }) => theme.colors.grey_800};
     color: ${({ theme }) => theme.colors.white};
     font-family: 'Inter', sans-serif;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :target {
+    scroll-margin-top: 80px
+  }
+
 
   @media (max-width: 1080px) {
     html {
