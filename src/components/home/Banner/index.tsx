@@ -20,7 +20,12 @@ export function Banner() {
         </div>
 
         <div className="user-image">
-          <Image src="/assets/images/user-image.png" width="380" height="380" />
+          <Image
+            alt=""
+            src="/assets/images/user-image.png"
+            width="380"
+            height="380"
+          />
         </div>
       </Content>
     </Container>

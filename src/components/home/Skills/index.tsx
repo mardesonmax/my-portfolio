@@ -21,6 +21,7 @@ export function Skills({ skills }: Props) {
             <div className="skill" key={skill.id}>
               <div className="image">
                 <Image
+                  alt=""
                   src={skill.image.uri}
                   width={skill.image.width}
                   height={skill.image.height}

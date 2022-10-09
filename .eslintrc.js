@@ -11,6 +11,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'next/core-web-vitals',
   ],
+  parser: '@typescript-eslint/parser',
   overrides: [],
   parserOptions: {
     project: 'tsconfig.json',
@@ -20,6 +21,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  plugins: ['react', 'react-hooks', 'prettier', '@typescript-eslint'],
   rules: {
     'prettier/prettier': 'error',
     'react-hooks/rules-of-hooks': 'error',

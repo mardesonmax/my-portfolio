@@ -1,11 +1,11 @@
-import { Banner } from './components/Banner';
 import { Header } from '~/components/Header';
 import { Container } from './styles';
-import { Skills } from './components/Skills';
 import { GetServerSideProps } from 'next';
 import { api } from '~/services/api';
 import { SkillDTO } from '~/dtos/SkillDTO';
-import { Contacts } from './components/Contacts';
+import { Banner } from '~/components/home/Banner';
+import { Skills } from '~/components/home/Skills';
+import { Contacts } from '~/components/home/Contacts';
 
 interface Props {
   skills: SkillDTO[];
@@ -32,10 +32,16 @@ export default function Home({ skills }: Props) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const { data } = await api.get('/skill');
-  return {
-    props: {
-      skills: data,
-    },
-  };
+  try {
+    const { data } = await api.get('/skill');
+    return {
+      props: {
+        skills: data,
+      },
+    };
+  } catch {
+    return {
+      props: {},
+    };
+  }
 };
