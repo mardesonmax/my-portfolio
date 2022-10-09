@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ContentMaxWidth } from '../Content/styles';
+import { ContentMaxWidth } from '../ContentMaxWidth/styles';
 
 export const Container = styled.header`
   display: flex;
