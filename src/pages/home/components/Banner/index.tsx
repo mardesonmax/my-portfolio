@@ -3,7 +3,7 @@ import { Container, Content } from './styles';
 
 export function Banner() {
   return (
-    <Container>
+    <Container id="banner">
       <Content>
         <div className="user-text">
           <h1>
@@ -20,7 +20,7 @@ export function Banner() {
         </div>
 
         <div className="user-image">
-          <Image src="/images/user-image.png" width="380" height="380" />
+          <Image src="/assets/images/user-image.png" width="380" height="380" />
         </div>
       </Content>
     </Container>

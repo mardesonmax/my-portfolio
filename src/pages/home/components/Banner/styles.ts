@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { ContentMaxWidth } from '~/components/ContentMaxWidth/styles';
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,9 +44,27 @@ export const Content = styled(ContentMaxWidth)`
 
     .user-text {
       order: 12;
+      margin-top: 32px;
+      flex: 100%;
     }
     .user-image {
       order: 10;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .user-text {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .user-text {
+      h1 {
+        font-size: 2.5rem;
+      }
     }
   }
 `;
