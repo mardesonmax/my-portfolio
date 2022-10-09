@@ -5,7 +5,7 @@ export function Header() {
   return (
     <Container>
       <Content>
-        <Link href="/home">
+        <Link href="/">
           <div className="logo">
             <h1>Mardeson Pereira</h1>
           </div>
