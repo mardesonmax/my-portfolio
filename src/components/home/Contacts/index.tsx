@@ -38,7 +38,7 @@ export function Contacts() {
 
           <div className="contact">
             <a
-              href="https://api.whatsapp.com/send?phone=5585988572761&text=Ol%C3%A1%2C%20Mardeson%20Pereira"
+              href="https://api.whatsapp.com/send?phone=5585988532761&text=Ol%C3%A1%2C%20Mardeson%20Pereira"
               target="_blank"
               rel="noopener noreferrer"
             >

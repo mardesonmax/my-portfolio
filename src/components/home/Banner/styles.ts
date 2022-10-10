@@ -5,7 +5,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 40px 16px;
   background: ${({ theme }) => theme.colors.grey_900};
   min-height: 70vh;
 `;
