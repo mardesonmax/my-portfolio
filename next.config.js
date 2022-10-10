@@ -6,6 +6,9 @@ const nextConfig = {
     styledComponents: true,
   },
   pageExtensions: ['tsx', 'ts'],
+  images: {
+    domains: ['localhost', 'mardesondev.com'],
+  },
 };
 
 module.exports = nextConfig;

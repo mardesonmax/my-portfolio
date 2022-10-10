@@ -7,6 +7,7 @@ import { Banner } from '~/components/home/Banner';
 import { Skills } from '~/components/home/Skills';
 import { Contacts } from '~/components/home/Contacts';
 import { Container } from '~/styles/home/styles';
+import Head from 'next/head';
 
 interface Props {
   skills?: SkillDTO[];
@@ -15,6 +16,10 @@ interface Props {
 export default function Home({ skills }: Props) {
   return (
     <Container>
+      <Head>
+        <title>Mardeson Pereira</title>
+      </Head>
+
       <Header />
 
       <Banner />
