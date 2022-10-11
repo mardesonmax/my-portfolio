@@ -78,7 +78,7 @@ export const skills = [
       width: 80,
       height: 80,
     },
-    name: 'PrimaJS',
+    name: 'PrismaJS',
   },
   {
     id: '3e638fe0-95bb-4329-a56d-34ee894a289b',
