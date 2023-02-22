@@ -17,6 +17,7 @@ export const Content = styled(ContentMaxWidth)`
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
 
     .skill {
       .image {

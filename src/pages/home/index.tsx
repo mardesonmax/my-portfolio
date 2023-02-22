@@ -1,13 +1,14 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import { Header } from '~/components/Header';
 import { GetStaticProps } from 'next';
-import { api } from '~/services/api';
 import { SkillDTO } from '~/dtos/SkillDTO';
-import { Banner } from '~/components/home/Banner';
-import { Skills } from '~/components/home/Skills';
-import { Contacts } from '~/components/home/Contacts';
-import { Container } from '~/styles/home/styles';
+
 import Head from 'next/head';
+import { Container } from './styles';
+import { api } from '~/services/api';
+import { Banner } from './components/Banner';
+import { Skills } from './components/Skills';
+import { Contacts } from './components/Contacts';
 
 interface Props {
   skills?: SkillDTO[];
@@ -40,15 +41,18 @@ export default function Home({ skills }: Props) {
 export const getStaticProps: GetStaticProps = async () => {
   try {
     const { data } = await api.get('/skill');
+
     return {
       props: {
         skills: data,
       },
+      revalidate: 60 * 1, // 1 min
     };
   } catch (error) {
     console.log(error);
     return {
       props: {},
+      revalidate: 60 * 1, // 1 min
     };
   }
 };

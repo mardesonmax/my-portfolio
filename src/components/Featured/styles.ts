@@ -8,6 +8,7 @@ export const Container = styled.div`
   }
 
   span {
+    display: block;
     font-size: 1rem;
     font-weight: 500;
     color: ${({ theme }) => theme.colors.grey_400};

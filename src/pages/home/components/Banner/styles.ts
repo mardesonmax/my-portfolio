@@ -7,7 +7,7 @@ export const Container = styled.section`
   align-items: center;
   padding: 40px 16px;
   background: ${({ theme }) => theme.colors.grey_900};
-  min-height: 70vh;
+  min-height: 80vh;
 `;
 
 export const Content = styled(ContentMaxWidth)`
@@ -24,6 +24,7 @@ export const Content = styled(ContentMaxWidth)`
     }
 
     span {
+      display: block;
       font-size: 1rem;
       font-weight: 500;
       color: ${({ theme }) => theme.colors.grey_400};

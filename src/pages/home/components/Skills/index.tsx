@@ -17,8 +17,13 @@ export function Skills({ skills }: Props) {
         />
 
         <div className="skills">
-          {skills.map(skill => (
-            <div className="skill" key={skill.id}>
+          {skills.map((skill, index) => (
+            <div
+              className="skill"
+              key={skill.id}
+              data-aos="fade-left"
+              data-aos-delay={50 * index}
+            >
               <div className="image">
                 <Image
                   alt=""

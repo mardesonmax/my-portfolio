@@ -8,8 +8,8 @@ interface Props {
 export function Featured({ title, description }: Props) {
   return (
     <Container>
-      <h2>{title}</h2>
-      <span>{description}</span>
+      <h2 data-aos="fade-right">{title}</h2>
+      <span data-aos="fade-up">{description}</span>
     </Container>
   );
 }

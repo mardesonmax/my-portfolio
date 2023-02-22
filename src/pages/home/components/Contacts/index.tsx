@@ -18,7 +18,7 @@ export function Contacts() {
         />
 
         <div className="contacts">
-          <div className="contact">
+          <div className="contact" data-aos="fade-up">
             <div className="icon">
               <MapPin weight="bold" />
             </div>
@@ -26,7 +26,7 @@ export function Contacts() {
             <span>Fortaleza - CE</span>
           </div>
 
-          <div className="contact">
+          <div className="contact" data-aos="fade-up" data-aos-delay="50">
             <a href="mailto:mardesondev@gmail.com">
               <div className="icon">
                 <Envelope weight="bold" />
@@ -36,7 +36,7 @@ export function Contacts() {
             </a>
           </div>
 
-          <div className="contact">
+          <div className="contact" data-aos="fade-up" data-aos-delay="100">
             <a
               href="https://api.whatsapp.com/send?phone=5585988532761&text=Ol%C3%A1%2C%20Mardeson%20Pereira"
               target="_blank"
@@ -50,7 +50,7 @@ export function Contacts() {
             </a>
           </div>
 
-          <div className="contact">
+          <div className="contact" data-aos="fade-up" data-aos-delay="150">
             <a
               href="https://www.linkedin.com/in/mardeson-pereira-6a1369208"
               target="_blank"
@@ -64,7 +64,7 @@ export function Contacts() {
             </a>
           </div>
 
-          <div className="contact">
+          <div className="contact" data-aos="fade-up" data-aos-delay="200">
             <a
               href="https://github.com/mardesonmax"
               target="_blank"
